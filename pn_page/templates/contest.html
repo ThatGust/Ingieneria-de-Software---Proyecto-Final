@@ -4,3 +4,67 @@
 {% endblock %}
 {% block title %}{{title}}{% endblock %}
 {% block content %}
+<section class="ftco-section contact-section">
+    <div class="container">
+        <div class="row d-flex mb-5 contact-info">
+            <div class="col-md-12 mb-4">
+                <h2 class="h3">Concursos</h2>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-md-3">
+                <p>Para entrar al concurso, porfavor sirvase de llenar la forma que usted desee</p>
+            </div>
+        </div>
+        <div class="row block-9">
+            <div class="col-md-6 order-md-last d-flex">
+                <form action="contact.html#" class="bg-light p-5 contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nombre" value="{{ request.form['name'] }}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email" value="{{ request.form['email'] }}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Institucion" value="{{ request.form['insti'] }}">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="7" class="form-control"
+                            placeholder="Resumen">{{ request.form['resume'] }}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Enviar Formulario" class="btn btn-primary py-3 px-5">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 d-flex">
+                <div id="map" class="bg-white"></div>
+            </div>
+        </div>
+        <div class="row block-9">
+            <div class="col-md-6 order-md-last d-flex">
+                <form action="contact.html#" class="bg-light p-5 contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Institucion">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="7" class="form-control"
+                            placeholder="Resumen"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 d-flex">
+                <div id="map" class="bg-white"></div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
