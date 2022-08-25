@@ -8,16 +8,17 @@ from flask import Flask, jsonify, make_response, render_template, request, url_f
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
+app.config['SECRET_KEY'] = "random string"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
-
+''' 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50))
     email = db.Column(db.String(100), unique=True)
     institution = db.Column(db.String(100))
-
+'''
 class Program(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50))
@@ -25,13 +26,14 @@ class Program(db.Model):
     institution = db.Column(db.String(100))
     resume = db.Column(db.String(260))
 
+
 class Poster_C(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50))
     email = db.Column(db.String(100), unique=True)
     institution = db.Column(db.String(100))
     resume = db.Column(db.String(260))
-
+''' 
 class Ponent_A(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     d_start = db.Column(db.Integer, primary_key=True)
@@ -61,53 +63,48 @@ class Poster(db.Model):
     author = db.Column(db.String(60))
 
     archive = db.Column(db.String(100), unique=True)
+'''
+#db.session.add (model object) = CRUD
 
 @app.route('/')
 def index():
     title = "Inicio"
-
     return render_template('index.html', title=title)
 
-@app.route('/')
-def ponent():
-    title = "Ponentes"
-
-    return render_template('ponent.html', title=title)
-
-@app.route('/create/', methods=('GET', 'POST'))
+@app.route('/contest', methods=('GET', 'POST'))
 def contest():
-    title = "Inscripciones"
+    title = "Programacion"
     if request.method == 'POST':
-        name = request.form['title']
-        email = request.form['email']
-        insti = request.form['insti']
-        resume = request.form['resume']
-
-        if not name:
-            flash('Se requiere nombre')
-        elif not email:
-            flash('Se requiere email')
-        elif not insti:
-            flash('Se requiere institucion')
-        elif not resume:
-            flash('Se requiere resumen')
+      if not request.form['name'] or not request.form['email'] or not request.form['insti'] or not request.form['resume']:
+         flash('Llene todos los espacios', 'Error')
+      else:
+         Program = Program(request.form['name'], request.form['email'],
+            request.form['insti'], request.form['resume'])
+         
+         db.session.add(Program)
+         db.session.commit()
+         
+         flash('Forma enviada')
     return render_template('contest.html', title=title)
 
-@app.route('/')
-def register():
-    title = "Regitrarse"
+@app.route('/contest2', methods=('GET', 'POST'))
+def contest2():
+    title = "Posters"
+    if request.method == 'POST':
+      if not request.form['name'] or not request.form['email'] or not request.form['insti'] or not request.form['resume']:
+         flash('Llene todos los espacios', 'Error')
+      else:
+         Poster_C = Poster_C(request.form['name'], request.form['email'],
+            request.form['insti'], request.form['resume'])
+         
+         db.session.add(Poster_C)
+         db.session.commit()
+         
+         flash('Forma enviada')
+         return redirect(url_for('show_all'))
 
-    return render_template('register.html', title=title)
-
-@app.route('/')
-def login():
-    title = "Login"
-
-    return render_template('login.html', title=title)
-
-db.session.add()
-db.session.commit()
-
+    return render_template('contest2.html', title=title)
 
 if __name__ == '__main__':
+    db.create_all()
     app.run(debug=True)
