@@ -1,4 +1,5 @@
 {% extends "layout_2.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
 {% block head %}
 {{ super() }}
 {% endblock %}
@@ -17,19 +18,19 @@
         </div>
         <div class="row block-9">
             <div class="col-md-6 order-md-last d-flex">
-                <form action="contact.html#" class="bg-light p-5 contact-form">
+                <form action="{{ request.path }}" class="bg-light p-5 contact-form" method = "post">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nombre" value="{{ request.form['name'] }}">
+                        <input type="text" class="form-control" name = "name" placeholder="Nombre">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email" value="{{ request.form['email'] }}">
+                        <input type="text" class="form-control" name = "email" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Institucion" value="{{ request.form['insti'] }}">
+                        <input type="text" class="form-control" name = "institution" placeholder="Institucion">
                     </div>
                     <div class="form-group">
-                        <textarea name="" id="" cols="30" rows="7" class="form-control"
-                            placeholder="Resumen">{{ request.form['resume'] }}</textarea>
+                        <textarea name="resume" cols="30" rows="7" class="form-control"
+                            placeholder="Resumen"></textarea>
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Enviar Formulario" class="btn btn-primary py-3 px-5">
