@@ -5,7 +5,7 @@ DDD - Final Proyect
 Como proposito del trabajo final de nuestro procceding tenemos el  de facilitar el acceso a la información de eventos relacionados a la semana de la computacion dirigido a los estudiantes universitarios. Así como incentivarlos y ayudarlos a su registro e inscripcion en concurso en el que desen participar, ademas de poder programar su horario de asistencia a las charlas de distinguidos ponenetes.
 
 
-![mjjjj](https://fips.unsa.edu.pe/wp-content/uploads/2017/10/ingenieria-sistemas-848x411.jpg)
+![cs](https://www.dcc.uchile.cl/sites/default/files/imagefield_thumbs/OCI_Alumnos.jpg?1480345610)
 
 ## Funcionalidades
 En primer lugar se tienen wireframes de cada pestaña: Inicio, Nosotros, Servicio, Actividad. Los cuales cada uno nos lleva a conocer mas sobre el proyecto.
