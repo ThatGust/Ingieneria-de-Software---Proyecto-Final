@@ -137,29 +137,29 @@ Cada fragmento del codigo ejerce una sola funcion; teniendo el cuenta que utiliz
 ```
 
 ## Estilos de Programación aplicados;
-1. Programación estructurada (PE)
+1. CODE-GOLF
 
-La programación estructurada esta compuesta por un conjunto de técnicas que han ido evolucionando aumentando considerablemente la productividad del programa reduciendo el tiempo de depuración y mantenimiento del mismo.
+Tan pocas líneas de código como sea posible
 
-Esta programación estructurada utiliza un número limitado de estructuras de control, reduciendo así considerablemente los errores.
+```
+@app.route('/')
+def index():
+    title = "Inicio"
+    return render_template('index.html', title=title)
 
-Esta técnica incorpora:
+```
+2. PIPELINE
 
-Diseño descendente (top-dow): el problema se descompone en etapas o estructuras jerárquicas.
-Recursos abstractos (simplicidad): consiste en descompones las acciones complejas en otras más simples capaces de ser resueltas con mayor facilidad.
-Estructuras básicas: existen tres tipos de estructuras básicas:
-Estructuras secuénciales: cada acción sigue a otra acción secuencialmente. La salida de una acción es la entrada de otra.
-Estructuras selectivas: en estas estructuras se evalúan las condiciones y en función del resultado de las mismas se realizan unas acciones u otras. Se utilizan expresiones lógicas.
-Estructuras repetitivas: son secuencias de instrucciones que se repiten un número determinado de veces.
+Problema mayor descompuesto en abstracciones funcionales. Las funciones, según las Matemáticas, son relaciones de entradas a salidas.
+Problema más grande resuelto como una canalización de aplicaciones de funciones
 
+```
+@app.route('/download/<upload_id>')
+def download(upload_id):
+    Posterm = Poster_C.query.filter_by(id=upload_id).first()
+    return send_file(BytesIO(Posterm.data), attachment_filename=Posterm.filename, as_attachment=True)
+```
 
-2. Programación modular
-
-En la programación modular consta de varias secciones dividas de forma que interactúan a través de llamadas a procedimientos, que integran el programa en su totalidad.
-
-En la programación modular, el programa principal coordina las llamadas a los módulos secundarios y pasa los datos necesarios en forma de parámetros.
-
-A su vez cada modulo puede contener sus propios datos y llamar a otros módulos o funciones.
 
 
 3. Programación funcional
