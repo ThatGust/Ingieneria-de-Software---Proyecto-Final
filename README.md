@@ -173,6 +173,4 @@ def logout():
 ```
 Layouts
 ```
-```
-
-```
+![Open_Closed](https://github.com/ThatGust/Ingieneria-de-Software---Proyecto-Final/blob/main/Capture.PNG)
