@@ -14,15 +14,25 @@ from flask_sqlalchemy  import SQLAlchemy
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 
+########################################
+#Declaracion de parametros para la base de datos y login
+########################################
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = "random string"
 bootstrap = Bootstrap(app)
+
 db = SQLAlchemy(app)
+
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
+
+########################################
+#Declaracion de las tablas para la base de datos 
+########################################
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -71,6 +81,10 @@ class Poster(db.Model):
     author = db.Column(db.String(60))
     file = db.Column(db.LargeBinary)
 
+########################################
+#Implementacion del framework de login 
+########################################
+
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
@@ -86,15 +100,15 @@ class RegisterForm(FlaskForm):
     password = PasswordField('password', validators=[InputRequired(), Length(min=8, max=80)])
     institution = StringField('institution', validators=[InputRequired(), Length(max=80)])
 
+########################################
+#Implementacion de FLask
+########################################
+
 def __init__(self, name, email, institution, resume):
    self.name = name
    self.email = email
    self.institution = institution
    self.resume = resume
-
-def validate_username(self, field):
-        if User.query.filter_by(username=field.data).first():
-            raise ValidationError('El usuario ya esta en uso.')
 
 @app.route('/')
 def index():
@@ -133,33 +147,31 @@ def register():
 def contest():
     title = "Programacion"
     if request.method == 'POST':
-      if not request.form['name'] or not request.form['email'] or not request.form['institution'] or not request.form['resume']:
+      if not request.form['name'] or not request.form['email'] or not request.form['institution'] or not request.form['resume']: #Si no se encuentra una casilla que el proceso se detenga
          flash('Llene todos los espacios', 'error')
       else:
-         Progra = Program(name=request.form['name'], email=request.form['email'],
+         Progra = Program(name=request.form['name'], email=request.form['email'], #Se insertan los valores segun el form
             institution=request.form['institution'], resume=request.form['resume'])
-         
-         db.session.add(Progra)
+
+         db.session.add(Progra) #Se ejecuta la variable insertando la data
          db.session.commit()
          
          flash('Forma enviada')
     return render_template('contest.html', title=title)
-
-
 
 @app.route('/contest2', methods=('GET', 'POST'))
 def contest2():
     title = "Posters"
     if request.method == 'POST':
       file=request.files['data']
-      if not request.form['name'] or not request.form['email'] or not request.form['institution'] or not request.files['data']:
+      if not request.form['name'] or not request.form['email'] or not request.form['institution'] or not request.files['data']: #Si no se encuentra una casilla que el proceso se detenga
          flash('Llene todos los espacios', 'error')
       else:
          file=request.files['data']
-         Posterm = Poster_C(name=request.form['name'], email=request.form['email'],
-            institution=request.form['institution'], data=file.read())
-         
-         db.session.add(Posterm)
+         Posterm = Poster_C(name=request.form['name'], email=request.form['email'], #Se insertan los valores segun el form
+            institution=request.form['institution'], data=file.read())#Se ejecuta la variable insertando la data
+
+         db.session.add(Posterm) 
          db.session.commit()
          
          flash('Forma enviada')
@@ -169,6 +181,11 @@ def contest2():
 def download(upload_id):
     Posterm = Poster_C.query.filter_by(id=upload_id).first()
     return send_file(BytesIO(Posterm.data), attachment_filename=Posterm.filename, as_attachment=True)
+
+@app.route('/ponent')
+def ponent():
+    title = "Ponentes"
+    return render_template('ponent.html', title=title)
 
 @app.route('/logout')
 @login_required
