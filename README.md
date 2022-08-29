@@ -156,6 +156,10 @@ def logout():
     logout_user()
     return redirect(url_for('index'))
 ```
+**Formato**: <br>
+El codigo en su totalidad esta ordenado y formateado en funcion que sea legible. <br>
+
+![Open_Closed](https://github.com/ThatGust/Ingieneria-de-Software---Proyecto-Final/blob/main/image_2022-08-29_141629603.png)
 ## 2. O-Principio de Abierto-Cerrado:
   Este principio tiene como objetivo extender el comportamiento de una Clase sin cambiar el comportamiento existente de esa Clase.   Esto es para evitar causar errores dondequiera que se use la Clase.
   Para aplicar este ejemplo todas  las clases deben descender de una clase abstracta donde se presenten todos aquellos métodos que   son la base de las respectivas clases.
