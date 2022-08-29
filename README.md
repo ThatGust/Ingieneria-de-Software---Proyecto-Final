@@ -2,7 +2,10 @@
 DDD - Final Proyect
 =================
 ## Propósito del proyecto
+Como proposito del trabajo final de nuestro procceding tenemos el  de facilitar el acceso a la información de eventos relacionados a la semana de la computacion dirigido a los estudiantes universitarios. Así como incentivarlos y ayudarlos a su registro e inscripcion en concurso en el que desen participar, ademas de poder programar su horario de asistencia a las charlas de distinguidos ponenetes.
+
 ## Funcionalidades
+En primer lugar se tienen wireframes de cada pestaña: Inicio, Nosotros, Servicio, Actividad. Los cuales cada uno nos lleva a conocer mas sobre el proyecto.
 
 ## Buenas Practicas - Codigo Legible
 **Lenguaje**: <br>
