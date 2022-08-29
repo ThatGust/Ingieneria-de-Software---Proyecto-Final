@@ -12,19 +12,19 @@ En primer lugar se tienen wireframes de cada pestaña: Registro, Login, Ponencia
 # Inicio
 Dando paso a la presentacion del trabajo final, el inicio se muestra para elegir la opcion que el ususario desee tomar 
 
-# Login
+### Login
 Para login se toma los datos se usuario y del password
 
-#Register
+### Register
 Para esta parte se genera un nuevo usuario con nuevo password que sera parte de la base de datos
 
-# C.Programacion
+### C.Programacion
 Realiza el registro para el concurso de programacion competitiva para ser alamacenados en la base de datos 
 
-# Posters
+### Posters
 Realiza el registro de nuevos posters para ser alamacenados en la base de datos 
 
-# Logout
+### Logout
 Una vez realizado los registros se puede dar la opcion de salir con logout
 
 ## Buenas Practicas - Codigo Legible
