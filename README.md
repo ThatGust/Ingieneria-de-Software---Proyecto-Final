@@ -1,7 +1,8 @@
 
 DDD - Final Proyect
 =================
-
+## Propósito del proyecto
+## Funcionalidades
 
 ## Buenas Practicas - Codigo Legible
 **Lenguaje**: <br>
