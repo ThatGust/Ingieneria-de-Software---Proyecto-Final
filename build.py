@@ -13,7 +13,7 @@ version = "1.0"
 summary = "Example PyBuilder / Git project"
 url     = "https://github.com/ThatGust/Ingieneria-de-Software---Proyecto-Final"
 
-description = """Proyecto final de Ingieneria de Sistemas."""
+description = """Proyecto final de Ingieneria de Software."""
 
 authors      = [Author("ThatGust", "alvaro.cano.luque@gmail.com")]
 license      = "None"
