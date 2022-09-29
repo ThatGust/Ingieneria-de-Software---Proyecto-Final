@@ -1,0 +1,32 @@
+running clean
+'build\lib' does not exist -- can't clean it
+'build\bdist.win-amd64' does not exist -- can't clean it
+'build\scripts-3.10' does not exist -- can't clean it
+running sdist
+running egg_info
+creating Ingieneria_de_Software_Proyecto_Final.egg-info
+writing Ingieneria_de_Software_Proyecto_Final.egg-info\PKG-INFO
+writing dependency_links to Ingieneria_de_Software_Proyecto_Final.egg-info\dependency_links.txt
+writing namespace_packages to Ingieneria_de_Software_Proyecto_Final.egg-info\namespace_packages.txt
+writing top-level names to Ingieneria_de_Software_Proyecto_Final.egg-info\top_level.txt
+writing manifest file 'Ingieneria_de_Software_Proyecto_Final.egg-info\SOURCES.txt'
+reading manifest file 'Ingieneria_de_Software_Proyecto_Final.egg-info\SOURCES.txt'
+writing manifest file 'Ingieneria_de_Software_Proyecto_Final.egg-info\SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+creating Ingieneria-de-Software---Proyecto-Final-1.0
+creating Ingieneria-de-Software---Proyecto-Final-1.0\Ingieneria_de_Software_Proyecto_Final.egg-info
+copying files to Ingieneria-de-Software---Proyecto-Final-1.0...
+copying app.py -> Ingieneria-de-Software---Proyecto-Final-1.0
+copying setup.py -> Ingieneria-de-Software---Proyecto-Final-1.0
+copying Ingieneria_de_Software_Proyecto_Final.egg-info\PKG-INFO -> Ingieneria-de-Software---Proyecto-Final-1.0\Ingieneria_de_Software_Proyecto_Final.egg-info
+copying Ingieneria_de_Software_Proyecto_Final.egg-info\SOURCES.txt -> Ingieneria-de-Software---Proyecto-Final-1.0\Ingieneria_de_Software_Proyecto_Final.egg-info
+copying Ingieneria_de_Software_Proyecto_Final.egg-info\dependency_links.txt -> Ingieneria-de-Software---Proyecto-Final-1.0\Ingieneria_de_Software_Proyecto_Final.egg-info
+copying Ingieneria_de_Software_Proyecto_Final.egg-info\namespace_packages.txt -> Ingieneria-de-Software---Proyecto-Final-1.0\Ingieneria_de_Software_Proyecto_Final.egg-info
+copying Ingieneria_de_Software_Proyecto_Final.egg-info\top_level.txt -> Ingieneria-de-Software---Proyecto-Final-1.0\Ingieneria_de_Software_Proyecto_Final.egg-info
+copying Ingieneria_de_Software_Proyecto_Final.egg-info\zip-safe -> Ingieneria-de-Software---Proyecto-Final-1.0\Ingieneria_de_Software_Proyecto_Final.egg-info
+Writing Ingieneria-de-Software---Proyecto-Final-1.0\setup.cfg
+creating dist
+Creating tar archive
+removing 'Ingieneria-de-Software---Proyecto-Final-1.0' (and everything under it)

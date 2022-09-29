@@ -1,0 +1,156 @@
+Collecting numpy
+  Downloading numpy-1.23.3-cp310-cp310-win_amd64.whl (14.6 MB)
+     ---------------------------------------- 14.6/14.6 MB 2.9 MB/s eta 0:00:00
+Installing collected packages: numpy
+Successfully installed numpy-1.23.3
+Collecting flask
+  Using cached Flask-2.2.2-py3-none-any.whl (101 kB)
+Collecting flask_bootstrap
+  Using cached Flask_Bootstrap-3.3.7.1-py3-none-any.whl
+Collecting flask_login
+  Using cached Flask_Login-0.6.2-py3-none-any.whl (17 kB)
+Collecting flask_sqlalchemy
+  Using cached Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl (17 kB)
+Collecting flask_wtf
+  Using cached Flask_WTF-1.0.1-py3-none-any.whl (12 kB)
+ERROR: Could not find a version that satisfies the requirement werkzeug.security (from versions: none)
+ERROR: No matching distribution found for werkzeug.security
+Collecting flask
+  Using cached Flask-2.2.2-py3-none-any.whl (101 kB)
+Collecting flask_bootstrap
+  Using cached Flask_Bootstrap-3.3.7.1-py3-none-any.whl
+Collecting flask_login
+  Using cached Flask_Login-0.6.2-py3-none-any.whl (17 kB)
+Collecting flask_sqlalchemy
+  Using cached Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl (17 kB)
+Collecting flask_wtf
+  Using cached Flask_WTF-1.0.1-py3-none-any.whl (12 kB)
+Collecting werkzeug
+  Using cached Werkzeug-2.2.2-py3-none-any.whl (232 kB)
+Collecting wtforms
+  Using cached WTForms-3.0.1-py3-none-any.whl (136 kB)
+Collecting wtforms.validators
+  Downloading wtforms_validators-1.0.0-py3-none-any.whl (4.7 kB)
+Collecting itsdangerous>=2.0
+  Using cached itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+Collecting click>=8.0
+  Using cached click-8.1.3-py3-none-any.whl (96 kB)
+Collecting Jinja2>=3.0
+  Using cached Jinja2-3.1.2-py3-none-any.whl (133 kB)
+Collecting visitor
+  Using cached visitor-0.1.3-py3-none-any.whl
+Collecting dominate
+  Using cached dominate-2.7.0-py2.py3-none-any.whl (29 kB)
+Collecting SQLAlchemy>=0.8.0
+  Downloading SQLAlchemy-1.4.41-cp310-cp310-win_amd64.whl (1.6 MB)
+     ---------------------------------------- 1.6/1.6 MB 2.9 MB/s eta 0:00:00
+Collecting MarkupSafe>=2.1.1
+  Using cached MarkupSafe-2.1.1-cp310-cp310-win_amd64.whl (17 kB)
+Collecting is-disposable-email
+  Downloading is_disposable_email-1.0.0-py3-none-any.whl (104 kB)
+     -------------------------------------- 104.4/104.4 kB 3.0 MB/s eta 0:00:00
+Collecting dnspython
+  Using cached dnspython-2.2.1-py3-none-any.whl (269 kB)
+Collecting colorama
+  Using cached colorama-0.4.5-py2.py3-none-any.whl (16 kB)
+Collecting greenlet!=0.4.17
+  Downloading greenlet-1.1.3-cp310-cp310-win_amd64.whl (101 kB)
+     -------------------------------------- 101.7/101.7 kB 6.1 MB/s eta 0:00:00
+Installing collected packages: visitor, is-disposable-email, MarkupSafe, itsdangerous, greenlet, dominate, dnspython, colorama, wtforms, werkzeug, SQLAlchemy, Jinja2, click, wtforms.validators, flask, flask_wtf, flask_sqlalchemy, flask_login, flask_bootstrap
+Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 SQLAlchemy-1.4.41 click-8.1.3 colorama-0.4.5 dnspython-2.2.1 dominate-2.7.0 flask-2.2.2 flask_bootstrap-3.3.7.1 flask_login-0.6.2 flask_sqlalchemy-2.5.1 flask_wtf-1.0.1 greenlet-1.1.3 is-disposable-email-1.0.0 itsdangerous-2.1.2 visitor-0.1.3 werkzeug-2.2.2 wtforms-3.0.1 wtforms.validators-1.0.0
+Requirement already satisfied: flask_bootstrap in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (3.3.7.1)
+Requirement already satisfied: flask_login in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (0.6.2)
+Requirement already satisfied: flask_sqlalchemy in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (2.5.1)
+Requirement already satisfied: flask_wtf in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (1.0.1)
+Requirement already satisfied: dominate in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.7.0)
+Requirement already satisfied: Flask>=0.8 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.2.2)
+Requirement already satisfied: visitor in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (0.1.3)
+Requirement already satisfied: Werkzeug>=1.0.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_login) (2.2.2)
+Requirement already satisfied: SQLAlchemy>=0.8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_sqlalchemy) (1.4.41)
+Requirement already satisfied: WTForms in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (3.0.1)
+Requirement already satisfied: itsdangerous in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (2.1.2)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (3.1.2)
+Requirement already satisfied: click>=8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (8.1.3)
+Requirement already satisfied: greenlet!=0.4.17 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from SQLAlchemy>=0.8.0->flask_sqlalchemy) (1.1.3)
+Requirement already satisfied: MarkupSafe>=2.1.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Werkzeug>=1.0.1->flask_login) (2.1.1)
+Requirement already satisfied: colorama in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from click>=8.0->Flask>=0.8->flask_bootstrap) (0.4.5)
+Requirement already satisfied: flask_bootstrap in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (3.3.7.1)
+Requirement already satisfied: flask_login in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (0.6.2)
+Requirement already satisfied: flask_sqlalchemy in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (2.5.1)
+Requirement already satisfied: flask_wtf in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (1.0.1)
+Requirement already satisfied: Flask>=0.8 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.2.2)
+Requirement already satisfied: dominate in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.7.0)
+Requirement already satisfied: visitor in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (0.1.3)
+Requirement already satisfied: Werkzeug>=1.0.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_login) (2.2.2)
+Requirement already satisfied: SQLAlchemy>=0.8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_sqlalchemy) (1.4.41)
+Requirement already satisfied: itsdangerous in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (2.1.2)
+Requirement already satisfied: WTForms in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (3.0.1)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (3.1.2)
+Requirement already satisfied: click>=8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (8.1.3)
+Requirement already satisfied: greenlet!=0.4.17 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from SQLAlchemy>=0.8.0->flask_sqlalchemy) (1.1.3)
+Requirement already satisfied: MarkupSafe>=2.1.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Werkzeug>=1.0.1->flask_login) (2.1.1)
+Requirement already satisfied: colorama in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from click>=8.0->Flask>=0.8->flask_bootstrap) (0.4.5)
+Requirement already satisfied: flask_bootstrap in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (3.3.7.1)
+Requirement already satisfied: flask_login in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (0.6.2)
+Requirement already satisfied: flask_sqlalchemy in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (2.5.1)
+Requirement already satisfied: flask_wtf in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (1.0.1)
+Requirement already satisfied: Flask>=0.8 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.2.2)
+Requirement already satisfied: visitor in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (0.1.3)
+Requirement already satisfied: dominate in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.7.0)
+Requirement already satisfied: Werkzeug>=1.0.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_login) (2.2.2)
+Requirement already satisfied: SQLAlchemy>=0.8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_sqlalchemy) (1.4.41)
+Requirement already satisfied: itsdangerous in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (2.1.2)
+Requirement already satisfied: WTForms in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (3.0.1)
+Requirement already satisfied: click>=8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (8.1.3)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (3.1.2)
+Requirement already satisfied: greenlet!=0.4.17 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from SQLAlchemy>=0.8.0->flask_sqlalchemy) (1.1.3)
+Requirement already satisfied: MarkupSafe>=2.1.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Werkzeug>=1.0.1->flask_login) (2.1.1)
+Requirement already satisfied: colorama in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from click>=8.0->Flask>=0.8->flask_bootstrap) (0.4.5)
+Requirement already satisfied: flask_bootstrap in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (3.3.7.1)
+Requirement already satisfied: flask_login in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (0.6.2)
+Requirement already satisfied: flask_sqlalchemy in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (2.5.1)
+Requirement already satisfied: flask_wtf in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (1.0.1)
+Requirement already satisfied: visitor in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (0.1.3)
+Requirement already satisfied: dominate in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.7.0)
+Requirement already satisfied: Flask>=0.8 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.2.2)
+Requirement already satisfied: Werkzeug>=1.0.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_login) (2.2.2)
+Requirement already satisfied: SQLAlchemy>=0.8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_sqlalchemy) (1.4.41)
+Requirement already satisfied: itsdangerous in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (2.1.2)
+Requirement already satisfied: WTForms in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (3.0.1)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (3.1.2)
+Requirement already satisfied: click>=8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (8.1.3)
+Requirement already satisfied: greenlet!=0.4.17 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from SQLAlchemy>=0.8.0->flask_sqlalchemy) (1.1.3)
+Requirement already satisfied: MarkupSafe>=2.1.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Werkzeug>=1.0.1->flask_login) (2.1.1)
+Requirement already satisfied: colorama in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from click>=8.0->Flask>=0.8->flask_bootstrap) (0.4.5)
+Requirement already satisfied: flask_bootstrap in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (3.3.7.1)
+Requirement already satisfied: flask_login in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (0.6.2)
+Requirement already satisfied: flask_sqlalchemy in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (2.5.1)
+Requirement already satisfied: flask_wtf in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (1.0.1)
+Requirement already satisfied: dominate in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.7.0)
+Requirement already satisfied: visitor in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (0.1.3)
+Requirement already satisfied: Flask>=0.8 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.2.2)
+Requirement already satisfied: Werkzeug>=1.0.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_login) (2.2.2)
+Requirement already satisfied: SQLAlchemy>=0.8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_sqlalchemy) (1.4.41)
+Requirement already satisfied: WTForms in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (3.0.1)
+Requirement already satisfied: itsdangerous in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (2.1.2)
+Requirement already satisfied: click>=8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (8.1.3)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (3.1.2)
+Requirement already satisfied: greenlet!=0.4.17 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from SQLAlchemy>=0.8.0->flask_sqlalchemy) (1.1.3)
+Requirement already satisfied: MarkupSafe>=2.1.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Werkzeug>=1.0.1->flask_login) (2.1.1)
+Requirement already satisfied: colorama in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from click>=8.0->Flask>=0.8->flask_bootstrap) (0.4.5)
+Requirement already satisfied: flask_bootstrap in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (3.3.7.1)
+Requirement already satisfied: flask_login in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (0.6.2)
+Requirement already satisfied: flask_sqlalchemy in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (2.5.1)
+Requirement already satisfied: flask_wtf in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (1.0.1)
+Requirement already satisfied: Flask>=0.8 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.2.2)
+Requirement already satisfied: dominate in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (2.7.0)
+Requirement already satisfied: visitor in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_bootstrap) (0.1.3)
+Requirement already satisfied: Werkzeug>=1.0.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_login) (2.2.2)
+Requirement already satisfied: SQLAlchemy>=0.8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_sqlalchemy) (1.4.41)
+Requirement already satisfied: itsdangerous in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (2.1.2)
+Requirement already satisfied: WTForms in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from flask_wtf) (3.0.1)
+Requirement already satisfied: Jinja2>=3.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (3.1.2)
+Requirement already satisfied: click>=8.0 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Flask>=0.8->flask_bootstrap) (8.1.3)
+Requirement already satisfied: greenlet!=0.4.17 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from SQLAlchemy>=0.8.0->flask_sqlalchemy) (1.1.3)
+Requirement already satisfied: MarkupSafe>=2.1.1 in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from Werkzeug>=1.0.1->flask_login) (2.1.1)
+Requirement already satisfied: colorama in c:\users\mimic\documents\projects\ingieneria-de-software---proyecto-final\target\venv\build\cpython-3.10.7.final.0\lib\site-packages (from click>=8.0->Flask>=0.8->flask_bootstrap) (0.4.5)
